@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+   <head>
+ 
+  <!-- Meta Description -->
+  <meta name="description" content="AdNest - Hum create karte hain attractive advertisement websites, landing pages aur greeting pages jo aapke business ko shine karte hain.">
+  
+  <!-- Favicon / Logo -->
+  <link rel="icon" href="logo.png" type="image/x-icon">
+  <!-- Open Graph / Facebook & WhatsApp sharing -->
+  <meta property="og:title" content="AdNest - Creative websites Landing & Greeting Pages">
+  <meta property="og:description" content="AdNest create karta hai stunning advertisement websites aur greeting pages aapke business ke liye.">
+  <meta property="og:image" content="logo.png">
+  <meta property="og:url" content="https://adnestltd.netlify.app/">
+  <meta property="og:type" content="website">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AdNest - Creative Landing & Greeting Pages">
+  <meta name="twitter:description" content="AdNest create karta hai stunning advertisement websites aur greeting pages aapke business ke liye.">
+  <meta name="twitter:image" content="o">
+  <meta name="twitter:url" content="https://adnestltd.netlify.app/">
+</head>
+<title>AdNest-Creative websites Landing & Greeting Pages</title>
+<style>
+/* Global Styles */
+ 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    cursor: url('cursor.png'), auto;
+    background-color: #eff1f5;
+    /* background-image: radial-gradient(#d6d7d8 1px, transparent 1px); */
+    background-size: 2rem 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+.babuji {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* padding: 1% 5%; */
+    display: grid;
+    grid-template-columns: 80px 1fr auto;
+    align-items: center;
+    gap: 2rem;
+    background-color: #303339;
+    z-index: 10;
+}
+
+.babuji img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.name {
+    color: rgb(180, 8, 180);
+    font-size: 2.5rem;
+    font-weight: 600;
+    justify-self: start;
+    /* padding-left: -2rem; */
+}
+
+.container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container .box, .container #box {
+    font-size: 1.2rem;
+}
+
+.shopbutton {
+    border: 1px solid rgb(241, 238, 238);
+    height: 3.5rem;
+    width: 9rem;
+    border-radius: 8px;
+    background-color: rgb(180, 8, 180);
+    color: rgb(250, 245, 245);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.shopbutton:hover {
+    background-image: linear-gradient(rgb(180, 8, 180), rgb(231, 87, 231));
+    transform: scale(1.02);
+}
+
+/* Welcome Section */
+.welcome {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding: 12rem 15%;
+    font-weight: 700;
+    font-size: 60px;
+    color: black;
+}
+
+span {
+    color: rgb(231, 56, 231);
+}
+
+.coverline {
+    color: rgb(82, 82, 82);
+    font-size: 16.5px;
+    font-weight: 200;
+    margin-top: 1rem;
+}
+
+.gobutton {
+    min-width: 560px;
+    min-height: 60px;
+    font-size: 2rem;
+    color: rgb(249, 245, 245);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 2px rgb(134, 131, 131);
+    background-color: rgb(180, 8, 180);
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.gobutton:hover {
+    background-image: linear-gradient(rgb(180, 8, 180), rgb(231, 87, 231));
+    transform: scale(1.02);
+}
+
+/* Services Section */
+.why {
+    text-align: center;
+    color: rgb(174, 34, 129);
+    font-size: 3rem;
+    font-weight: 550;
+    margin-top: 1rem;
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    justify-items: center;
+    align-items: start;
+    padding: 3rem 5%;
+}
+
+.boxes {
+    display: grid;
+    text-align: center;
+    background-color: rgb(210, 92, 210);
+    height: 320px;
+    width: 250px;
+    border-radius: 10px;
+    border: 3px solid rgb(245, 243, 245);
+    box-shadow: 0px 0px 15px 10px rgb(141, 48, 141);
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.boxes:hover {
+    background-image: linear-gradient(rgb(180, 8, 180), rgb(231, 87, 231));
+    transform: scale(1.03);
+}
+
+.boxhead {
+    color: rgb(240, 239, 239);
+    font-size: 28px;
+    margin-top: 1rem;
+}
+
+.boxbottom {
+    color: rgb(244, 239, 239);
+    font-size: 14px;
+    margin: 0.5rem 1rem;
+}
+
+.icon {
+    border-radius: 50%;
+    max-height: 60px;
+    margin: 1rem auto;
+    background-color: rgb(223, 172, 240);
+    border: 2px solid rgb(253, 252, 252);
+}
+
+/* Footer */
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 1rem;
+    height: auto;
+    background-color: #303339;
+    padding: 1rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.foot {
+    color: gray;
+    font-size: 18px;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    color: gray;
+    font-size: 16px;
+    font-weight: 200;
+    background-color: #303339;
+    padding: 1rem 0;
+}
+
+/* Media Queries for Tablet */
+@media(max-width: 2024px) {
+    .babuji {
+        grid-template-columns: 60px 1fr auto;
+        padding: 0.5rem 2%;
+    }
+
+    .name {
+        font-size: 2.5rem;
+    }
+
+    .welcome {
+        padding: 10rem 10%;
+        font-size: 50px;
+    }
+    .shopbutton{
+        margin-right:3rem ;
+    }
+    .gobutton {
+        min-width: 350px;
+        font-size: 32px;
+    }
+
+    .container1 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .boxes {
+        width: 90%;
+    }
+}
+
+/* Media Queries for Mobile */
+@media(max-width: 767px) {
+    .babuji {
+        grid-template-columns: .4fr .5fr 1fr;
+        padding: 0.3rem;
+        text-align: center;
+    }
+    .shopbutton{
+        margin-right: auto;
+        width: 7rem;
+        height: 2.8rem;
+    }
+    .name {
+        font-size: 1.78rem;
+        grid-column: auto;
+        justify-self: start;
+        padding-left: -2rem;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .welcome {
+        padding: 8rem 5%;
+        font-size: 30px;
+    }
+
+    .gobutton {
+        min-width: 258px;
+        font-size: 22px;
+    }
+
+    .container1 {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 2rem 2%;
+    }
+
+    .boxes {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .icon {
+        max-height: 40px;
+        
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .foot {
+        display: block;
+        margin: 5px 0;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="babuji">
+        <div class="img">
+            <img src="Orange Simple Clean Smartphone Repair and Service Logo.gif" alt="Logo">
+        </div>
+        <div class="name">AdNest</div>
+        <div class="container">
+            <!-- <div class="box"><a href="">Home</a></div>
+            <div class="box"><a href="">Cart</a></div>
+            <div class="box"><a href="">Profile</a></div> -->
+            <div id="box"><button class="shopbutton"><a href="2nd page.html">Create Yours</a></button></div>
+        </div>
+    </div>
+</header>
+
+<!-- Welcome Section -->
+<div class="welcome">
+  <div>Welcome to <span>AdNest</span> – Your One-Stop Destination for Creative Greeting & Advertisement Pages!</div>
+<div class="coverline">At AdNest, we help you make every message memorable! Create stunning greeting pages and impactful advertisement pages that capture attention and leave a lasting impression. Whether it's for personal greetings or business promotions, we bring your ideas to life with style and ease.</div>
+  <div><a href="2nd page.html"><button class="gobutton">Take The Next Step →</button></a></div>
+</div>
+
+<!-- Services Section -->
+<div class="why">Our Services</div>
+<div class="container1">
+    <div class="boxes"> 
+        <img class="icon" src="greeting page.png" alt="">
+        <div class="boxhead">Greeting Pages</div>
+        <div class="boxbottom">Create personalized, shareable greeting pages for any occasion with on-demand integrated features.</div>
+    </div>
+    <div class="boxes">
+        <img class="icon" src="advertisement.png" alt="">
+        <div class="boxhead">Advertisement Pages</div>
+        <div class="boxbottom">Contact Us section integration, All On Demand Features integration, with proper deployment &Makes An Extra Business Card </div>
+    </div>
+    <div class="boxes">
+        <img class="icon" src="personal.png" alt="">
+        <div class="boxhead">Personal And Business Websites</div>
+        <div class="boxbottom">We provides already deployed sites with payment integration.</div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer">
+        <a class="foot" href="">Contact Us</a>
+        <a class="foot" href="">Social Media</a>
+        <a class="foot" href="">Customer Support</a>
+        <a class="foot" href="">Terms & Conditions</a>
+    </div>
+    <div>© 2024 AdNest Private Limited. All rights reserved.</div>
+</footer>
+
+</body>
+</html>

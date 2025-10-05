@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Form</title>
+    <style>
+        @media(min-width:660px){
+            .form{
+                max-width: 50vw;
+                justify-self: center;
+            }
+        }
+       
+        .form{
+            color: aliceblue;
+            box-shadow: 0px 0px 15px 5px rgb(85, 83, 83);
+            display: flex;
+            flex-direction: column;
+            border: 2px solid rgb(236, 233, 233);
+            margin: .9%;
+            padding: 5%;
+            border-radius: 15px;
+            background-image: radial-gradient(rgb(232, 29, 168), rgb(180, 8, 180));
+        }
+        input{
+            height: 20px;
+            border-radius: 15px;
+            width: 70%;
+            border: 2px solid rgb(228, 224, 222);
+        }
+        .box{
+            padding-left: 10px;
+        }
+        textarea{
+            width: 80%;
+            height: 10%;
+            border-radius: 5px;
+        }
+        a{
+            display:inline-block;
+            padding:15px 30px;
+            background-color:#4CAF50;
+            color:white;
+            text-decoration:none;
+            font-size:18px;
+            border-radius:5px;
+        }
+        a:hover {
+            background-color: #08c611;
+        }
+        button{
+            background-color: rgb(95, 95, 233);
+            height: 6.7vh;
+            width: 32vw; 
+            border-radius: 5px; 
+            color: white; 
+            border: none; 
+            box-shadow: 0px 0px 10px 3px; 
+            font-size: 15px; 
+            padding: 10px;
+            font-weight: 550;
+        }
+        button:hover{
+            background-color: blue;
+            transform: scale(1.02);
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+     <div class="form"> 
+        <h1>कृपया यह फ़ॉर्म भरें।</h1>
+        <br><br>
+        <form action="https://getform.io/f/bjjrxlkb" method="POST" enctype="multipart/form-data">
+            <label>नाम:</label>
+            <input class="box" name="Name" type="text" placeholder="अपना नाम यहाँ दर्ज करें" required>
+            <br><br><br>
+            <label>अपनी फोटो अपलोड करें (वैकल्पिक)</label><br><br>
+            <input name="Photo" type="file">
+            <br><br>
+            <label>लिंक- <br>(Whatsapp, Instagram यदि आप इसे पेज में जोड़ना चाहते हैं):</label><br><br>
+            <textarea class="box" name="Link" type="text" placeholder="अपना Whatsapp या Instagram लिंक यहाँ डालें"></textarea>
+            <br><br>
+            <label for="contact">Whatsapp/Instagram Id/Email Id जिसपर वेबसाइट का लिंक भेजना है </label>
+            <input id="contact"  name="contact" type="text" placeholder="आपकी वेबसाइट का लिंक कहाँ भेजा जाए?" required><br><br><br>
+            <label for="referral">Referral Code(वैकल्पिक):</label>
+            <input type="text" id="referral" name="referral" placeholder="Referral Code (Optional)"><br><br><br>
+            <a href="upi://pay?pa=7500150462@naviaxis&am=10.00&cu=INR&tn=Happy%20Diwali">
+                UPI से ₹10 का भुगतान करें
+            </a>
+            <br><br><br>
+            <label>भुगतान रसीद अपलोड करें</label>
+            <input name="PaymentReceipt" type="file" required>
+            <br><br><br>
+            <input type="hidden" name="_redirect" value="thankyou.html">
+
+            <div style="text-align: center;">
+                <button type="submit">अपनी वेबसाइट बनाएं</button>
+            </div>
+        </form>
+  </div>
+</body>
+</html>

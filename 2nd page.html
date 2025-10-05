@@ -1,0 +1,199 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="logo.png" type="image/x-icon">
+   
+    <title>Choose</title>
+    <style>
+     @media(max-width: 767px) {
+    .babuji {
+        grid-template-columns: .3fr .5fr 1fr;
+        padding: 0.3rem;
+        text-align: center;
+    }
+
+    .name {
+        font-size: 2rem;
+        grid-column: auto;
+        justify-self: start;
+        padding-left: -2rem;
+    }
+}
+        @media(max-width: 2024px) {
+    .babuji {
+        grid-template-columns: 60px 1fr auto;
+        padding: 0.5rem 2%;
+    }
+
+    .name {
+        font-size: 2.5rem;
+    }
+        }
+      * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    cursor: url('cursor.png'), auto;
+    background-color: #eff1f5;
+    background-image: radial-gradient(#b3b6ba 1px, transparent 1px);
+    background-size: 2rem 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+.babuji {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+   
+    display: grid;
+    grid-template-columns: 80px 1fr auto;
+    align-items: center;
+    gap: 2rem;
+    background-color: #303339;
+    z-index: 10;
+}
+
+.babuji img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.name {
+    color: rgb(180, 8, 180);
+    font-size: 2rem;
+    font-weight: 600;
+    justify-self: start;
+    padding-left: -2rem;
+}
+
+.container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container .box, .container #box {
+    font-size: 1.2rem;
+}
+
+.shopbutton {
+    border: 1px solid rgb(241, 238, 238);
+    height: 3.5rem;
+    width: 9rem;
+    border-radius: 8px;
+    background-color: rgb(180, 8, 180);
+    color: rgb(250, 245, 245);
+    font-size: 1rem;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.shopbutton:hover {
+    background-image: linear-gradient(rgb(180, 8, 180), rgb(231, 87, 231));
+    transform: scale(1.02);
+}
+.container1 {
+    margin-top: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(3, 1fr); */
+    gap: 2.6rem;
+    justify-content: center;
+    align-items: center;
+    padding: 15%;
+}
+
+.boxes {
+    /* display: grid; */
+    margin-bottom: 5vh;
+    text-align: center;
+    background-color: rgb(210, 92, 210);
+    height: 320px;
+    width: 250px;
+    border-radius: 10px;
+    border: 3px solid rgb(245, 243, 245);
+    box-shadow: 0px 0px 15px 10px rgb(141, 48, 141);
+    /* align-items: center; */
+    transition: all 0.3s ease;
+}
+
+.boxes:hover {
+    background-image: linear-gradient(rgb(180, 8, 180), rgb(231, 87, 231));
+    transform: scale(1.03);
+}
+
+.boxhead {
+    color: rgb(240, 239, 239);
+    font-size: 28px;
+    margin-top: 1rem;
+}
+
+.boxbottom {
+    color: rgb(244, 239, 239);
+    font-size: 14px;
+    margin: 0.5rem 1rem;
+}
+
+.icon {
+    max-height: 60px;
+    margin: 1rem auto;
+    
+    border-radius: 50%;
+    background-color: rgb(223, 172, 240);
+    border: 2px solid rgb(234, 226, 226);
+}
+        </style>
+    </head>
+ <header>
+        <div class="babuji">
+        <div class="img"><img src="Orange Simple Clean Smartphone Repair and Service Logo.gif" alt=""></div>
+        <div class="name">AdNest</div>
+        <div class="container">
+            
+           
+            <div id="box"><Button class="shopbutton"><a href="form.html">Create Yours</a></Button></div>
+        </div>
+        </div>
+ 
+    </header>
+    <div class="container1">
+     <a href="form.html">
+    <div class="boxes">
+         <a href="form.html">
+        <img class="icon" src="greeting page.png" alt="">
+        <div class="boxhead">Create Own Greeting Page</div>
+        <div class="boxbottom">Create Own Beautyful Diwali Greeting Page.</div>
+        <div class="boxbottom" style="color: yellow;"><b>Diwali Offer</b></div>
+        <pre style="color: rgb(9, 237, 20); font-size: 25px;"><b>₹ <s style="color: rgb(236, 17, 5); font-size: 30px;"> 50 </s> 10</b></pre>
+         
+   </div>
+    </a>
+     <a href="index.html">
+    <div class="boxes">
+       
+        <img class="icon" src="advertisement.png" alt="">
+        <div class="boxhead">Advertisement Pages</div>
+        <div class="boxbottom">Contact Us section integration, All On Demand Features integration, with proper deployment &Makes An Extra Business Card </div>
+        
+    </div>
+   </a>
+   <a href="index.html">
+    <div class="boxes">
+         
+        <img class="icon" src="personal.png" alt="">
+        <div class="boxhead">Personal And Business Websites</div>
+        <div class="boxbottom">We provides already deployed sites with payment integration.</div>
+       
+    </div>
+     </a>
+</div>
